@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page Profile Example</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <!-- Header com logo e menu -->
     <header class="header">
@@ -13,7 +15,7 @@
             <div class="logo">
                 <h1><span class="logo-text">Your</span><span class="logo-highlight">Brand</span></h1>
             </div>
-            
+
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
@@ -23,7 +25,7 @@
                     <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
-            
+
             <!-- Menu hamburger para mobile -->
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -32,22 +34,167 @@
             </div>
         </div>
     </header>
-    
-    <!-- Espaço para a landing page -->
-    <div id="landing-page">
-        <!-- Conteúdo principal será adicionado aqui -->
-    </div>
-    
+
+    <!-- Seção Home -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Bem-vindo ao <span class="highlight">Seu Negócio</span></h1>
+                <p class="hero-subtitle">Transformamos ideias em soluções digitais inovadoras</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">Nossos Serviços</a>
+                    <a href="#contact" class="btn btn-secondary">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços</h2>
+                <p class="section-subtitle">Oferecemos soluções completas para impulsionar seu negócio</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Desenvolvimento Web</h3>
+                    <p class="service-description">Criamos sites e aplicações web modernas, responsivas e otimizadas
+                        para performance.</p>
+                    <ul class="service-features">
+                        <li>Sites responsivos</li>
+                        <li>Aplicações web</li>
+                        <li>E-commerce</li>
+                        <li>SEO otimizado</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor"
+                                stroke-width="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2" />
+                            <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Design UI/UX</h3>
+                    <p class="service-description">Designs intuitivos e atrativos que proporcionam a melhor experiência
+                        do usuário.</p>
+                    <ul class="service-features">
+                        <li>Interface de usuário</li>
+                        <li>Experiência do usuário</li>
+                        <li>Prototipação</li>
+                        <li>Design responsivo</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22S2 16 2 10V5L12 2L22 5V10C22 16 12 22 12 22Z" stroke="currentColor"
+                                stroke-width="2" stroke-linejoin="round" />
+                            <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Consultoria Digital</h3>
+                    <p class="service-description">Estratégias digitais personalizadas para acelerar o crescimento do
+                        seu negócio.</p>
+                    <ul class="service-features">
+                        <li>Estratégia digital</li>
+                        <li>Análise de mercado</li>
+                        <li>Transformação digital</li>
+                        <li>Otimização de processos</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 16V8A2 2 0 0 0 19 6H5A2 2 0 0 0 3 8V16A2 2 0 0 0 5 18H19A2 2 0 0 0 21 16Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M7 10H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                            <path d="M7 14H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Marketing Digital</h3>
+                    <p class="service-description">Estratégias de marketing digital para aumentar sua visibilidade e
+                        conversões.</p>
+                    <ul class="service-features">
+                        <li>SEO/SEM</li>
+                        <li>Redes sociais</li>
+                        <li>Email marketing</li>
+                        <li>Analytics</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Manutenção e Suporte</h3>
+                    <p class="service-description">Suporte técnico contínuo para garantir o funcionamento perfeito dos
+                        seus sistemas.</p>
+                    <ul class="service-features">
+                        <li>Manutenção preventiva</li>
+                        <li>Suporte 24/7</li>
+                        <li>Atualizações de segurança</li>
+                        <li>Backup e recuperação</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" stroke="currentColor"
+                                stroke-width="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2" />
+                            <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Aplicações Mobile</h3>
+                    <p class="service-description">Desenvolvimento de aplicativos móveis nativos e híbridos para iOS e
+                        Android.</p>
+                    <ul class="service-features">
+                        <li>Apps nativos</li>
+                        <li>Apps híbridos</li>
+                        <li>PWA</li>
+                        <li>Integração com APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script>
         // Script para menu hamburger
         const hamburger = document.getElementById('hamburger');
         const nav = document.querySelector('.nav');
-        
+
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             nav.classList.toggle('active');
         });
-        
+
         // Fechar menu ao clicar em um link
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', () => {
@@ -57,4 +204,5 @@
         });
     </script>
 </body>
+
 </html>
