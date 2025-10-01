@@ -185,24 +185,9 @@
         </div>
     </section>
 
-    <script>
-        // Script para menu hamburger
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.querySelector('.nav');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            });
-        });
-    </script>
+    <!-- JavaScript -->
+    <script src="utils.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
