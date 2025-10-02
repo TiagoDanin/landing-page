@@ -1,76 +1,504 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page Profile Example</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header com logo e menu -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1><span class="logo-text">Your</span><span class="logo-highlight">Brand</span></h1>
-            </div>
-            
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"><a href="#services" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfólio</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
-                </ul>
-            </nav>
-            
-            <!-- Menu hamburger para mobile -->
-            <div class="hamburger" id="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </header>
-    
-    <!-- Espaço para a landing page -->
-    <div id="landing-page">
-        <!-- Conteúdo principal será adicionado aqui -->
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Landing Page Profile Example</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-    <!-- Seção Sobre Nós -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="section-title">Sobre Nós</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Somos uma empresa comprometida em transformar ideias em realidade digital. Com anos de experiência no mercado, nossa equipe de profissionais dedicados trabalha incansavelmente para entregar soluções inovadoras e de alta qualidade.</p>
+    <body>
+        <!-- Header com logo e menu -->
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <h1>
+                        <span class="logo-text">Your</span
+                        ><span class="logo-highlight">Brand</span>
+                    </h1>
+                </div>
 
-                    <p>Nossa missão é ajudar empresas e empreendedores a alcançarem seus objetivos através de tecnologia de ponta, design criativo e estratégias eficazes. Acreditamos que cada projeto é único e merece atenção personalizada.</p>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#home" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about" class="nav-link">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#services" class="nav-link">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#portfolio" class="nav-link">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
 
-                    <p>Valorizamos a transparência, a comunicação aberta e o compromisso com a excelência em tudo o que fazemos. Nosso objetivo é construir parcerias duradouras baseadas em confiança e resultados excepcionais.</p>
+                <!-- Menu hamburger para mobile -->
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
                 </div>
             </div>
-        </div>
-    </section>
-    
-    <script>
-        // Script para menu hamburger
-        const hamburger = document.getElementById('hamburger');
-        const nav = document.querySelector('.nav');
-        
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            nav.classList.toggle('active');
-        });
-        
-        // Fechar menu ao clicar em um link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                hamburger.classList.remove('active');
-                nav.classList.remove('active');
-            });
-        });
-    </script>
-</body>
+        </header>
+
+        <!-- Seção Home -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Bem-vindo ao <span class="highlight">Seu Negócio</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Transformamos ideias em soluções digitais inovadoras
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary"
+                            >Nossos Serviços</a
+                        >
+                        <a href="#contact" class="btn btn-secondary"
+                            >Entre em Contato</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre Nós -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">Sobre Nós</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Somos uma empresa comprometida em transformar ideias em realidade digital. Com anos de experiência no mercado, nossa equipe de profissionais dedicados trabalha incansavelmente para entregar soluções inovadoras e de alta qualidade.</p>
+
+                        <p>Nossa missão é ajudar empresas e empreendedores a alcançarem seus objetivos através de tecnologia de ponta, design criativo e estratégias eficazes. Acreditamos que cada projeto é único e merece atenção personalizada.</p>
+
+                        <p>Valorizamos a transparência, a comunicação aberta e o compromisso com a excelência em tudo o que fazemos. Nosso objetivo é construir parcerias duradouras baseadas em confiança e resultados excepcionais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Serviços -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossos Serviços</h2>
+                    <p class="section-subtitle">
+                        Oferecemos soluções completas para impulsionar seu
+                        negócio
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 2L2 7L12 12L22 7L12 2Z"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M2 17L12 22L22 17"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M2 12L12 17L22 12"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Desenvolvimento Web</h3>
+                        <p class="service-description">
+                            Criamos sites e aplicações web modernas, responsivas
+                            e otimizadas para performance.
+                        </p>
+                        <ul class="service-features">
+                            <li>Sites responsivos</li>
+                            <li>Aplicações web</li>
+                            <li>E-commerce</li>
+                            <li>SEO otimizado</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect
+                                    x="2"
+                                    y="3"
+                                    width="20"
+                                    height="14"
+                                    rx="2"
+                                    ry="2"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <line
+                                    x1="8"
+                                    y1="21"
+                                    x2="16"
+                                    y2="21"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <line
+                                    x1="12"
+                                    y1="17"
+                                    x2="12"
+                                    y2="21"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Design UI/UX</h3>
+                        <p class="service-description">
+                            Designs intuitivos e atrativos que proporcionam a
+                            melhor experiência do usuário.
+                        </p>
+                        <ul class="service-features">
+                            <li>Interface de usuário</li>
+                            <li>Experiência do usuário</li>
+                            <li>Prototipação</li>
+                            <li>Design responsivo</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 22S2 16 2 10V5L12 2L22 5V10C22 16 12 22 12 22Z"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M9 12L11 14L15 10"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Consultoria Digital</h3>
+                        <p class="service-description">
+                            Estratégias digitais personalizadas para acelerar o
+                            crescimento do seu negócio.
+                        </p>
+                        <ul class="service-features">
+                            <li>Estratégia digital</li>
+                            <li>Análise de mercado</li>
+                            <li>Transformação digital</li>
+                            <li>Otimização de processos</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M21 16V8A2 2 0 0 0 19 6H5A2 2 0 0 0 3 8V16A2 2 0 0 0 5 18H19A2 2 0 0 0 21 16Z"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <path
+                                    d="M7 10H17"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+                                <path
+                                    d="M7 14H13"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Marketing Digital</h3>
+                        <p class="service-description">
+                            Estratégias de marketing digital para aumentar sua
+                            visibilidade e conversões.
+                        </p>
+                        <ul class="service-features">
+                            <li>SEO/SEM</li>
+                            <li>Redes sociais</li>
+                            <li>Email marketing</li>
+                            <li>Analytics</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 2L2 7L12 12L22 7L12 2Z"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M2 17L12 22L22 17"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                                <path
+                                    d="M2 12L12 17L22 12"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linejoin="round"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Manutenção e Suporte</h3>
+                        <p class="service-description">
+                            Suporte técnico contínuo para garantir o
+                            funcionamento perfeito dos seus sistemas.
+                        </p>
+                        <ul class="service-features">
+                            <li>Manutenção preventiva</li>
+                            <li>Suporte 24/7</li>
+                            <li>Atualizações de segurança</li>
+                            <li>Backup e recuperação</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg
+                                width="60"
+                                height="60"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <rect
+                                    x="2"
+                                    y="3"
+                                    width="20"
+                                    height="14"
+                                    rx="2"
+                                    ry="2"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <line
+                                    x1="8"
+                                    y1="21"
+                                    x2="16"
+                                    y2="21"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                                <line
+                                    x1="12"
+                                    y1="17"
+                                    x2="12"
+                                    y2="21"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                />
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Aplicações Mobile</h3>
+                        <p class="service-description">
+                            Desenvolvimento de aplicativos móveis nativos e
+                            híbridos para iOS e Android.
+                        </p>
+                        <ul class="service-features">
+                            <li>Apps nativos</li>
+                            <li>Apps híbridos</li>
+                            <li>PWA</li>
+                            <li>Integração com APIs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">Sobre Nós</h3>
+                        <p class="footer-text">
+                            Transformamos ideias em soluções digitais inovadoras
+                            para impulsionar o seu negócio.
+                        </p>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3 class="footer-title">Links Rápidos</h3>
+                        <ul class="footer-links">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">Sobre</a></li>
+                            <li><a href="#services">Serviços</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3 class="footer-title">Redes Sociais</h3>
+                        <div class="social-links">
+                            <a
+                                href="https://facebook.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-link"
+                                aria-label="Facebook"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://twitter.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-link"
+                                aria-label="Twitter"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://instagram.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-link"
+                                aria-label="Instagram"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://linkedin.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-link"
+                                aria-label="LinkedIn"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="https://github.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="social-link"
+                                aria-label="GitHub"
+                            >
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="currentColor"
+                                >
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3 class="footer-title">Contato</h3>
+                        <p class="footer-text">
+                            Email: contato@seunegocio.com.br
+                        </p>
+                        <p class="footer-text">Telefone: (11) 1234-5678</p>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>
+                        &copy; 2024 Seu Negócio. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- JavaScript -->
+        <script src="utils.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
